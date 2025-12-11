@@ -34,7 +34,6 @@
   line-height: 0.9;
   background-color: transparent;
   cursor: pointer;
-  border: none;
   width: fit-content;
   height: 40px;
   padding: 0;
@@ -66,6 +65,10 @@
   border: 2px solid transparent;
   width: 40px;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border 0.3s ease;
 }
 
 .card__icon {
@@ -171,9 +174,14 @@
   font-size: 14px;
   font-family: var(--font-family-accent);
   opacity: 0.5;
-  text-stroke: 1px white;
-  -webkit-text-stroke: 1px white;
   mix-blend-mode: hard-light;
+}
+
+@supports (text-stroke: 1px white) or (-webkit-text-stroke: 1px white) {
+  .card__label {
+    text-stroke: 1px white;
+    -webkit-text-stroke: 1px white;
+  }
 }
 
 .card__buttons {
@@ -181,13 +189,6 @@
   align-self: flex-end;
   gap: 8px;
   margin: 0 25px 25px 0;
-}
-
-.card__icon-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: border 0.3s ease;
 }
 
 .footer {
@@ -238,7 +239,6 @@
 }
 
 .popover__text {
-  width: fit-content;
   line-height: 150%;
   width: 234px;
 }
