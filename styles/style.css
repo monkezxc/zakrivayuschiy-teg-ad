@@ -97,7 +97,7 @@
 }
 
 .like-icon.is-liked {
-  animation: scale-heart 0.3s ease-in 0.1s
+  animation: scale-heart 0.3s ease-in 0.1s;
 }
 
 .like-icon.is-liked .sparks {
@@ -152,7 +152,7 @@
 .card__title {
   padding: 10px 5px;
   font-variation-settings: 'wght' var(--font-weight-bold);
-  font-size: 18px
+  font-size: 18px;
 }
 
 .card__text-content {
@@ -227,8 +227,6 @@
 
 .popover__floppy {
   display: block;
-  width: 40px;
-  height: 40px;
 }
 
 .popover__text-wrapper {
@@ -266,44 +264,40 @@
   }
 
   .card__label {
-    right: 14px
+    right: 14px;
   }
 }
 
-.hidden {
-  display: none
-}
-
 .card_0 img {
-  filter: saturate(2)
+  filter: saturate(2);
 }
 
 .card_1-1 img {
-  filter: brightness(0.5)
+  filter: brightness(0.5);
 }
 
 .card_1-2 img {
-  filter: saturate(2)
+  filter: saturate(2);
 }
 
 .card_2-1 img {
-  filter: hue-rotate(30deg)
+  filter: hue-rotate(30deg);
 }
 
 .card_2-2 img {
-  filter: sepia(0.7)
+  filter: sepia(0.7);
 }
 
 .card_3-1 img {
-  filter: invert()
+  filter: invert();
 }
 
 .card_3-2 img {
-  filter: contrast(7) hue-rotate(70deg)
+  filter: contrast(7) hue-rotate(70deg);
 }
 
 .card_final img {
-  filter: blur(8px)
+  filter: blur(8px);
 }
 
 /* animations */
